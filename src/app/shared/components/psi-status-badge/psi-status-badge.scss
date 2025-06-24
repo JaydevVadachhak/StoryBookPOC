@@ -1,0 +1,106 @@
+@use '../../../../app/scss/_colors' as *;
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid $color-neutral-light;
+
+  &--small {
+    padding: 2px 4px;
+  }
+
+  &--medium {
+    padding: 4px 8px;
+  }
+
+  &--large {
+    padding: 6px 12px;
+  }
+
+  &__text {
+    font-family: 'Montserrat';
+  }
+
+  &__secondary-high {
+    background-color: $color-neutral-light;
+    border: none;
+    color: $color-neutral-black;
+  }
+
+  &__secondary-med {
+    background-color: $color-neutral-white;
+    border: 1px solid $color-neutral-dark;
+    color: $color-neutral-black;
+  }
+
+  &__secondary {
+    background-color: $color-neutral-white;
+    border: 1px solid $color-neutral-light;
+    color: $color-neutral-black;
+  }
+
+  &__info {
+    background-color: $color-secondary;
+    border: none;
+    color: $color-neutral-black;
+  }
+
+  &__info-med {
+    background-color: $color-neutral-white;
+    border: 1px solid $color-secondary-v-high;
+
+    & > span {
+      color: $color-secondary-v-high;
+    }
+  }
+
+  &__success {
+    background-color: $color-success;
+    border: none;
+    color: $color-neutral-black;
+  }
+
+  &__success-med {
+    background-color: $color-neutral-white;
+    border: 1px solid $color-success-v-high;
+
+    & > span {
+      color: $color-success-v-high;
+    }
+  }
+
+  &__warning {
+    background-color: $color-warning;
+    border: none;
+    color: $color-neutral-black;
+  }
+
+  &__warning-med {
+    background-color: $color-neutral-white;
+    border: 1px solid $color-warning-v-high;
+
+    & > span {
+      color: $color-warning-v-high;
+    }
+  }
+
+  &__error {
+    background-color: $color-error;
+    border: none;
+
+    & > span {
+      color: $color-neutral-white;
+    }
+  }
+
+  &__error-med {
+    background-color: $color-neutral-white;
+    border: 1px solid $color-error-v-high;
+
+    & > span {
+      color: $color-error-v-high;
+    }
+  }
+}

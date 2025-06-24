@@ -1,0 +1,26 @@
+@use '../scss/_shadows' as *;
+
+.status-badge-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: $shadow-black-25;
+  padding: 10px;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+.circle-badge-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: $shadow-black-25;
+  padding: 10px;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+}

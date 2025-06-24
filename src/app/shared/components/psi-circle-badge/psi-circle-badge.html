@@ -1,0 +1,14 @@
+<div class="circle-badge">
+  <div
+    class="circle-badge__icon"
+    [class.circle-badge__icon--secondary]="statusType === 'secondary'"
+    [class.circle-badge__icon--success]="statusType === 'success'"
+    [class.circle-badge__icon--warning]="statusType === 'warning'"
+    [class.circle-badge__icon--error]="statusType === 'error'"
+    [class.circle-badge__icon--info]="statusType === 'info'"
+  ></div>
+  <div
+    class="typo-mon-body-black-regular circle-badge__text"
+    [textContent]="statusText | titlecase"
+  ></div>
+</div>

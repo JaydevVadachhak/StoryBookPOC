@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "App",
-            "id": "component-App-69a07ec433889c4745ce4ffc01fb1ad562905c632763515e2cc49d956c3ae7ea0e784e20f0e82adf15d32dc439a4a8fe810331f2721dd92a8ddc5dd04f7323f6",
+            "id": "component-App-4510d1dfef2954825814e3d566dbae82eca166114fc948f869c456705e0a7d16ee498011318b436989d7588046d2441765a75970fcaac3ff584648405f744c63",
             "file": "src/app/app.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -56,17 +56,17 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\n\n@Component({\n  selector: 'app-root',\n  imports: [RouterOutlet],\n  templateUrl: './app.html',\n  styleUrl: './app.scss'\n})\nexport class App {\n  protected title = 'StoryBookPOC';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { RouterOutlet } from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  imports: [RouterOutlet],\r\n  templateUrl: './app.html',\r\n  styleUrl: './app.scss'\r\n})\r\nexport class App {\r\n  protected title = 'StoryBookPOC';\r\n}\r\n",
             "styleUrl": "./app.scss",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<router-outlet />\n"
+            "templateData": "<router-outlet />\r\n"
         },
         {
             "name": "Home",
-            "id": "component-Home-3fdd2d6efc1aff4adbbbd2499b5aed4fceaa599410563d6b5029e02aca9878dc567ffefeb4b0b1bf0e82965038b788f8ce9cd65d1c7d2a206a7a8d5bcbd2394e",
+            "id": "component-Home-e844cc4ca5ec1f22b17195157019a75d77a337535cecfe2ed91ab4e6ae9b1e183d07f2a24a0aed122eceef6ce6857fb1d0c63a20a948357d256138276073e997",
             "file": "src/app/home/home.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -93,22 +93,87 @@
             "imports": [
                 {
                     "name": "PSIStatusBadge"
+                },
+                {
+                    "name": "PsiCircleBadge"
                 }
             ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { PSIStatusBadge } from '../shared/components/psi-status-badge/psi-status-badge';\n\n@Component({\n  selector: 'app-home',\n  imports: [PSIStatusBadge],\n  templateUrl: './home.html',\n  styleUrl: './home.scss',\n  standalone: true,\n})\nexport class Home {}\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { PSIStatusBadge } from '../shared/components/psi-status-badge/psi-status-badge';\r\nimport { PsiCircleBadge } from '../shared/components/psi-circle-badge/psi-circle-badge';\r\n\r\n@Component({\r\n  selector: 'app-home',\r\n  imports: [PSIStatusBadge, PsiCircleBadge],\r\n  templateUrl: './home.html',\r\n  styleUrl: './home.scss',\r\n  standalone: true,\r\n})\r\nexport class Home {}\r\n",
             "styleUrl": "./home.scss",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<h1>Status Badge</h1>\n\n<div class=\"status-badge-container\">\n    <div class=\"status-badge-container__row\">\n        <h4 class=\"typo-cri-h6-black-medium\">Secondary</h4>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'small'\" [statusType]=\"'secondary'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'medium'\" [statusType]=\"'secondary'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'large'\" [statusType]=\"'secondary'\"></app-psi-status-badge>\n    </div>\n    <div class=\"status-badge-container__row\">\n        <h4 class=\"typo-cri-h6-black-medium\">Secondary High</h4>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'small'\" [statusType]=\"'secondary-high'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'medium'\" [statusType]=\"'secondary-high'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'large'\" [statusType]=\"'secondary-high'\"></app-psi-status-badge>\n    </div>\n    <div class=\"status-badge-container__row\">\n        <h4 class=\"typo-cri-h6-black-medium\">Secondary Medium</h4>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'small'\" [statusType]=\"'secondary-med'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'medium'\" [statusType]=\"'secondary-med'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'large'\" [statusType]=\"'secondary-med'\"></app-psi-status-badge>\n    </div>\n    <div class=\"status-badge-container__row\">\n        <h4 class=\"typo-cri-h6-black-medium\">Info</h4>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'small'\" [statusType]=\"'info'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'medium'\" [statusType]=\"'info'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'large'\" [statusType]=\"'info'\"></app-psi-status-badge>\n    </div>\n    <div class=\"status-badge-container__row\">\n        <h4 class=\"typo-cri-h6-black-medium\">Info Medium</h4>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'small'\" [statusType]=\"'info-med'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'medium'\" [statusType]=\"'info-med'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'large'\" [statusType]=\"'info-med'\"></app-psi-status-badge>\n    </div>\n    <div class=\"status-badge-container__row\">\n        <h4 class=\"typo-cri-h6-black-medium\">Success</h4>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'small'\" [statusType]=\"'success'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'medium'\" [statusType]=\"'success'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'large'\" [statusType]=\"'success'\"></app-psi-status-badge>\n    </div>\n    <div class=\"status-badge-container__row\">\n        <h4 class=\"typo-cri-h6-black-medium\">Success Medium</h4>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'small'\" [statusType]=\"'success-med'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'medium'\" [statusType]=\"'success-med'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'large'\" [statusType]=\"'success-med'\"></app-psi-status-badge>\n    </div>\n    <div class=\"status-badge-container__row\">\n        <h4 class=\"typo-cri-h6-black-medium\">Warning</h4>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'small'\" [statusType]=\"'warning'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'medium'\" [statusType]=\"'warning'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'large'\" [statusType]=\"'warning'\"></app-psi-status-badge>\n    </div>\n    <div class=\"status-badge-container__row\">\n        <h4 class=\"typo-cri-h6-black-medium\">Warning Medium</h4>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'small'\" [statusType]=\"'warning-med'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'medium'\" [statusType]=\"'warning-med'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'large'\" [statusType]=\"'warning-med'\"></app-psi-status-badge>\n    </div>\n    <div class=\"status-badge-container__row\">\n        <h4 class=\"typo-cri-h6-black-medium\">Error</h4>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'small'\" [statusType]=\"'error'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'medium'\" [statusType]=\"'error'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'large'\" [statusType]=\"'error'\"></app-psi-status-badge>\n    </div>\n    <div class=\"status-badge-container__row\">\n        <h4 class=\"typo-cri-h6-black-medium\">Error Medium</h4>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'small'\" [statusType]=\"'error-med'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'medium'\" [statusType]=\"'error-med'\"></app-psi-status-badge>\n        <app-psi-status-badge [statusText]=\"'Success'\" [badgeSize]=\"'large'\" [statusType]=\"'error-med'\"></app-psi-status-badge>\n    </div>\n</div>"
+            "templateData": "<h1>Status Badge</h1>\r\n\r\n<div class=\"status-badge-container\">\r\n  <div class=\"status-badge-container__row\">\r\n    <h4 class=\"typo-cri-h6-black-medium\">Secondary</h4>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'small'\"\r\n      [statusType]=\"'secondary'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'medium'\"\r\n      [statusType]=\"'secondary'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'large'\"\r\n      [statusType]=\"'secondary'\"\r\n    ></app-psi-status-badge>\r\n  </div>\r\n  <div class=\"status-badge-container__row\">\r\n    <h4 class=\"typo-cri-h6-black-medium\">Secondary High</h4>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'small'\"\r\n      [statusType]=\"'secondary-high'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'medium'\"\r\n      [statusType]=\"'secondary-high'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'large'\"\r\n      [statusType]=\"'secondary-high'\"\r\n    ></app-psi-status-badge>\r\n  </div>\r\n  <div class=\"status-badge-container__row\">\r\n    <h4 class=\"typo-cri-h6-black-medium\">Secondary Medium</h4>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'small'\"\r\n      [statusType]=\"'secondary-med'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'medium'\"\r\n      [statusType]=\"'secondary-med'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'large'\"\r\n      [statusType]=\"'secondary-med'\"\r\n    ></app-psi-status-badge>\r\n  </div>\r\n  <div class=\"status-badge-container__row\">\r\n    <h4 class=\"typo-cri-h6-black-medium\">Info</h4>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'small'\"\r\n      [statusType]=\"'info'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'medium'\"\r\n      [statusType]=\"'info'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'large'\"\r\n      [statusType]=\"'info'\"\r\n    ></app-psi-status-badge>\r\n  </div>\r\n  <div class=\"status-badge-container__row\">\r\n    <h4 class=\"typo-cri-h6-black-medium\">Info Medium</h4>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'small'\"\r\n      [statusType]=\"'info-med'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'medium'\"\r\n      [statusType]=\"'info-med'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'large'\"\r\n      [statusType]=\"'info-med'\"\r\n    ></app-psi-status-badge>\r\n  </div>\r\n  <div class=\"status-badge-container__row\">\r\n    <h4 class=\"typo-cri-h6-black-medium\">Success</h4>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'small'\"\r\n      [statusType]=\"'success'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'medium'\"\r\n      [statusType]=\"'success'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'large'\"\r\n      [statusType]=\"'success'\"\r\n    ></app-psi-status-badge>\r\n  </div>\r\n  <div class=\"status-badge-container__row\">\r\n    <h4 class=\"typo-cri-h6-black-medium\">Success Medium</h4>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'small'\"\r\n      [statusType]=\"'success-med'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'medium'\"\r\n      [statusType]=\"'success-med'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'large'\"\r\n      [statusType]=\"'success-med'\"\r\n    ></app-psi-status-badge>\r\n  </div>\r\n  <div class=\"status-badge-container__row\">\r\n    <h4 class=\"typo-cri-h6-black-medium\">Warning</h4>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'small'\"\r\n      [statusType]=\"'warning'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'medium'\"\r\n      [statusType]=\"'warning'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'large'\"\r\n      [statusType]=\"'warning'\"\r\n    ></app-psi-status-badge>\r\n  </div>\r\n  <div class=\"status-badge-container__row\">\r\n    <h4 class=\"typo-cri-h6-black-medium\">Warning Medium</h4>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'small'\"\r\n      [statusType]=\"'warning-med'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'medium'\"\r\n      [statusType]=\"'warning-med'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'large'\"\r\n      [statusType]=\"'warning-med'\"\r\n    ></app-psi-status-badge>\r\n  </div>\r\n  <div class=\"status-badge-container__row\">\r\n    <h4 class=\"typo-cri-h6-black-medium\">Error</h4>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'small'\"\r\n      [statusType]=\"'error'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'medium'\"\r\n      [statusType]=\"'error'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'large'\"\r\n      [statusType]=\"'error'\"\r\n    ></app-psi-status-badge>\r\n  </div>\r\n  <div class=\"status-badge-container__row\">\r\n    <h4 class=\"typo-cri-h6-black-medium\">Error Medium</h4>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'small'\"\r\n      [statusType]=\"'error-med'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'medium'\"\r\n      [statusType]=\"'error-med'\"\r\n    ></app-psi-status-badge>\r\n    <app-psi-status-badge\r\n      [statusText]=\"'Success'\"\r\n      [badgeSize]=\"'large'\"\r\n      [statusType]=\"'error-med'\"\r\n    ></app-psi-status-badge>\r\n  </div>\r\n</div>\r\n\r\n<h1>Circle Badge</h1>\r\n\r\n<div class=\"circle-badge-container\">\r\n  <app-psi-circle-badge\r\n    [statusText]=\"'Text'\"\r\n    [statusType]=\"'secondary'\"\r\n  ></app-psi-circle-badge>\r\n  <app-psi-circle-badge\r\n    [statusText]=\"'Success'\"\r\n    [statusType]=\"'success'\"\r\n  ></app-psi-circle-badge>\r\n  <app-psi-circle-badge\r\n    [statusText]=\"'Warning'\"\r\n    [statusType]=\"'warning'\"\r\n  ></app-psi-circle-badge>\r\n  <app-psi-circle-badge\r\n    [statusText]=\"'Error'\"\r\n    [statusType]=\"'error'\"\r\n  ></app-psi-circle-badge>\r\n  <app-psi-circle-badge\r\n    [statusText]=\"'Info'\"\r\n    [statusType]=\"'info'\"\r\n  ></app-psi-circle-badge>\r\n</div>\r\n"
+        },
+        {
+            "name": "PsiCircleBadge",
+            "id": "component-PsiCircleBadge-7d94a157ecc223b90c17e9cc9a5aa38ef5083f0de69bbea33e6491135e9b0ed5d7b61f47a5ce4f80602f35c7aaa6cd62303deb929f133f7cf22b166be4ad1364",
+            "file": "src/app/shared/components/psi-circle-badge/psi-circle-badge.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-psi-circle-badge",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./psi-circle-badge.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "statusText",
+                    "defaultValue": "'--'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "statusType",
+                    "defaultValue": "'secondary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "\"secondary\" | \"success\" | \"warning\" | \"error\" | \"info\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\r\nimport { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-psi-circle-badge',\r\n  imports: [CommonModule],\r\n  templateUrl: './psi-circle-badge.html',\r\n  styleUrl: './psi-circle-badge.scss',\r\n})\r\nexport class PsiCircleBadge {\r\n  @Input() statusText: string = '--';\r\n  @Input() statusType: 'secondary' | 'success' | 'warning' | 'error' | 'info' =\r\n    'secondary';\r\n}\r\n",
+            "styleUrl": "./psi-circle-badge.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"circle-badge\">\r\n  <div\r\n    class=\"circle-badge__icon\"\r\n    [class.circle-badge__icon--secondary]=\"statusType === 'secondary'\"\r\n    [class.circle-badge__icon--success]=\"statusType === 'success'\"\r\n    [class.circle-badge__icon--warning]=\"statusType === 'warning'\"\r\n    [class.circle-badge__icon--error]=\"statusType === 'error'\"\r\n    [class.circle-badge__icon--info]=\"statusType === 'info'\"\r\n  ></div>\r\n  <div\r\n    class=\"typo-mon-body-black-regular circle-badge__text\"\r\n    [textContent]=\"statusText | titlecase\"\r\n  ></div>\r\n</div>\r\n"
         },
         {
             "name": "PSIStatusBadge",
-            "id": "component-PSIStatusBadge-047f98a4b9b4fb1eb52cbd862d5297dd23df2ee490275f322d50f642a549ae18775a60678d68081ef5dd2e9a9ba59b795f439cf988afdb9b7af5a7fd4f5502a9",
+            "id": "component-PSIStatusBadge-7e579c21d1813bc2c974135806fe44f6664395475c16f08dc7dd0378ce6ceecfb5c3f880de0fa298e01b23f1628729020de47a226a4271ad6a29176dbe530c07",
             "file": "src/app/shared/components/psi-status-badge/psi-status-badge.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -135,7 +200,7 @@
                 },
                 {
                     "name": "statusText",
-                    "defaultValue": "'success'",
+                    "defaultValue": "'--'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 12,
@@ -169,13 +234,13 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\n@Component({\n  selector: 'app-psi-status-badge',\n  imports: [CommonModule],\n  templateUrl: './psi-status-badge.html',\n  styleUrl: './psi-status-badge.scss',\n  standalone: true,\n})\nexport class PSIStatusBadge {\n  @Input() statusText: string = 'success';\n  @Input() badgeSize: 'small' | 'medium' | 'large' = 'small';\n  @Input() statusType:\n    | 'secondary-high'\n    | 'secondary-med'\n    | 'secondary'\n    | 'info'\n    | 'info-med'\n    | 'success'\n    | 'success-med'\n    | 'warning'\n    | 'warning-med'\n    | 'error'\n    | 'error-med' = 'secondary';\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\n\r\n@Component({\r\n  selector: 'app-psi-status-badge',\r\n  imports: [CommonModule],\r\n  templateUrl: './psi-status-badge.html',\r\n  styleUrl: './psi-status-badge.scss',\r\n  standalone: true,\r\n})\r\nexport class PSIStatusBadge {\r\n  @Input() statusText: string = '--';\r\n  @Input() badgeSize: 'small' | 'medium' | 'large' = 'small';\r\n  @Input() statusType:\r\n    | 'secondary-high'\r\n    | 'secondary-med'\r\n    | 'secondary'\r\n    | 'info'\r\n    | 'info-med'\r\n    | 'success'\r\n    | 'success-med'\r\n    | 'warning'\r\n    | 'warning-med'\r\n    | 'error'\r\n    | 'error-med' = 'secondary';\r\n}\r\n",
             "styleUrl": "./psi-status-badge.scss",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<div\n  class=\"status-badge\"\n  [class.status-badge--small]=\"badgeSize === 'small'\"\n  [class.status-badge--medium]=\"badgeSize === 'medium'\"\n  [class.status-badge--large]=\"badgeSize === 'large'\"\n  [class.status-badge__secondary-high]=\"statusType === 'secondary-high'\"\n  [class.status-badge__secondary-med]=\"statusType === 'secondary-med'\"\n  [class.status-badge__secondary]=\"statusType === 'secondary'\"\n  [class.status-badge__info]=\"statusType === 'info'\"\n  [class.status-badge__info-med]=\"statusType === 'info-med'\"\n  [class.status-badge__success]=\"statusType === 'success'\"\n  [class.status-badge__success-med]=\"statusType === 'success-med'\"\n  [class.status-badge__warning]=\"statusType === 'warning'\"\n  [class.status-badge__warning-med]=\"statusType === 'warning-med'\"\n  [class.status-badge__error]=\"statusType === 'error'\"\n  [class.status-badge__error-med]=\"statusType === 'error-med'\"\n>\n  @if (badgeSize === 'large') {\n  <span\n    class=\"typo-mon-paragraph-black-medium\"\n    [textContent]=\"statusText | titlecase\"\n  ></span>\n  } @else if (badgeSize === 'medium') {\n  <span\n    class=\"typo-mon-caption-black-medium\"\n    [textContent]=\"statusText | titlecase\"\n  ></span>\n  } @else if (badgeSize === 'small') {\n  <span\n    class=\"typo-mon-small-black-medium\"\n    [textContent]=\"statusText | titlecase\"\n  ></span>\n  }\n</div>\n"
+            "templateData": "<div\r\n  class=\"status-badge\"\r\n  [class.status-badge--small]=\"badgeSize === 'small'\"\r\n  [class.status-badge--medium]=\"badgeSize === 'medium'\"\r\n  [class.status-badge--large]=\"badgeSize === 'large'\"\r\n  [class.status-badge__secondary-high]=\"statusType === 'secondary-high'\"\r\n  [class.status-badge__secondary-med]=\"statusType === 'secondary-med'\"\r\n  [class.status-badge__secondary]=\"statusType === 'secondary'\"\r\n  [class.status-badge__info]=\"statusType === 'info'\"\r\n  [class.status-badge__info-med]=\"statusType === 'info-med'\"\r\n  [class.status-badge__success]=\"statusType === 'success'\"\r\n  [class.status-badge__success-med]=\"statusType === 'success-med'\"\r\n  [class.status-badge__warning]=\"statusType === 'warning'\"\r\n  [class.status-badge__warning-med]=\"statusType === 'warning-med'\"\r\n  [class.status-badge__error]=\"statusType === 'error'\"\r\n  [class.status-badge__error-med]=\"statusType === 'error-med'\"\r\n>\r\n  @if (badgeSize === 'large') {\r\n  <span\r\n    class=\"typo-mon-paragraph-black-medium\"\r\n    [textContent]=\"statusText | titlecase\"\r\n  ></span>\r\n  } @else if (badgeSize === 'medium') {\r\n  <span\r\n    class=\"typo-mon-caption-black-medium\"\r\n    [textContent]=\"statusText | titlecase\"\r\n  ></span>\r\n  } @else if (badgeSize === 'small') {\r\n  <span\r\n    class=\"typo-mon-small-black-medium\"\r\n    [textContent]=\"statusText | titlecase\"\r\n  ></span>\r\n  }\r\n</div>\r\n"
         }
     ],
     "modules": [],
@@ -209,7 +274,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "ApplicationConfig",
-                "defaultValue": "{\n  providers: [\n    provideBrowserGlobalErrorListeners(),\n    provideZoneChangeDetection({ eventCoalescing: true }),\n    provideRouter(routes), provideClientHydration(withEventReplay())\n  ]\n}"
+                "defaultValue": "{\r\n  providers: [\r\n    provideBrowserGlobalErrorListeners(),\r\n    provideZoneChangeDetection({ eventCoalescing: true }),\r\n    provideRouter(routes), provideClientHydration(withEventReplay())\r\n  ]\r\n}"
             },
             {
                 "name": "bootstrap",
@@ -261,7 +326,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "ApplicationConfig",
-                "defaultValue": "{\n  providers: [\n    provideServerRendering(withRoutes(serverRoutes))\n  ]\n}"
+                "defaultValue": "{\r\n  providers: [\r\n    provideServerRendering(withRoutes(serverRoutes))\r\n  ]\r\n}"
             },
             {
                 "name": "serverRoutes",
@@ -271,7 +336,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "ServerRoute[]",
-                "defaultValue": "[\n  {\n    path: '**',\n    renderMode: RenderMode.Prerender\n  }\n]"
+                "defaultValue": "[\r\n  {\r\n    path: '**',\r\n    renderMode: RenderMode.Prerender\r\n  }\r\n]"
             }
         ],
         "functions": [],
@@ -331,7 +396,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "ApplicationConfig",
-                    "defaultValue": "{\n  providers: [\n    provideBrowserGlobalErrorListeners(),\n    provideZoneChangeDetection({ eventCoalescing: true }),\n    provideRouter(routes), provideClientHydration(withEventReplay())\n  ]\n}"
+                    "defaultValue": "{\r\n  providers: [\r\n    provideBrowserGlobalErrorListeners(),\r\n    provideZoneChangeDetection({ eventCoalescing: true }),\r\n    provideRouter(routes), provideClientHydration(withEventReplay())\r\n  ]\r\n}"
                 }
             ],
             "src/main.server.ts": [
@@ -365,7 +430,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "ApplicationConfig",
-                    "defaultValue": "{\n  providers: [\n    provideServerRendering(withRoutes(serverRoutes))\n  ]\n}"
+                    "defaultValue": "{\r\n  providers: [\r\n    provideServerRendering(withRoutes(serverRoutes))\r\n  ]\r\n}"
                 }
             ],
             "src/app/app.routes.server.ts": [
@@ -377,7 +442,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "ServerRoute[]",
-                    "defaultValue": "[\n  {\n    path: '**',\n    renderMode: RenderMode.Prerender\n  }\n]"
+                    "defaultValue": "[\r\n  {\r\n    path: '**',\r\n    renderMode: RenderMode.Prerender\r\n  }\r\n]"
                 }
             ]
         },
@@ -387,7 +452,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 8,
+        "count": 7,
         "status": "low",
         "files": [
             {
@@ -446,6 +511,15 @@
                 "name": "Home",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/psi-circle-badge/psi-circle-badge.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PsiCircleBadge",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {

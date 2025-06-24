@@ -1,0 +1,39 @@
+@use "../../../scss/colors" as *;
+
+.circle-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  &__icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  &__icon--secondary {
+    background-color: $color-neutral-white;
+    outline: 1px solid $color-neutral-light;
+  }
+
+  &__icon--success {
+    background-color: $color-success;
+    outline: 1px solid $color-neutral-white;
+  }
+
+  &__icon--warning {
+    background-color: $color-warning;
+    outline: 1px solid $color-neutral-white;
+  }
+
+  &__icon--error {
+    background-color: $color-error;
+    outline: 1px solid $color-neutral-white;
+  }
+
+  &__icon--info {
+    background-color: $color-secondary;
+    outline: 1px solid $color-neutral-white;
+  }
+}

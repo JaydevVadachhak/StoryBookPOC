@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
 })
 export class PSIStatusBadge {
-  @Input() statusText: string = 'success';
+  @Input() statusText: string = '--';
   @Input() badgeSize: 'small' | 'medium' | 'large' = 'small';
   @Input() statusType:
     | 'secondary-high'

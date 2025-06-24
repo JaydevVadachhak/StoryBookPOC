@@ -1,0 +1,58 @@
+@use './_colors' as *;
+
+/* Montserrat */
+[class*="typo-mon"] {
+    font-family: "Montserrat";
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+[class^='typo-mon-'][class*='-black-'] {
+    color: $color-neutral-black;
+}
+
+[class^='typo-mon-'][class*='-medium'] {
+    font-weight: 500;
+}
+
+[class^='typo-mon-paragraph'] {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+[class^='typo-mon-caption'] {
+    font-size: 10px;
+    line-height: 14px;
+}
+
+[class^='typo-mon-small'] {
+    font-size: 8px;
+    line-height: 12px;
+}
+
+/* Crimson Pro */
+[class*="typo-cri"] {
+    font-family: "Crimson Pro";
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+[class*="typo-cri-"][class*='-neutral-black-'] {
+    color: $color-neutral-black;
+}
+
+[class*="typo-cri-"][class*='-medium-'] {
+    font-weight: 500;
+}
+
+[class*="typo-cri-paragraph"] {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+[class*="typo-cri-h6"] {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+

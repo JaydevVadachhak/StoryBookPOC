@@ -1,0 +1,101 @@
+/* Base Colors */
+$color-primary: rgb(139, 14, 4);
+$color-primary-10: rgba(139, 14, 4, 0.1);
+$color-primary-25: rgba(139, 14, 4, 0.25);
+$color-primary-50: rgba(139, 14, 4, 0.5);
+$color-primary-75: rgba(139, 14, 4, 0.75);
+
+$color-primary-high: rgb(105, 8, 0);
+$color-primary-medium: rgb(172, 13, 0);
+
+$color-primary-low: rgb(229, 17, 0);
+$color-primary-low-5: rgba(229, 17, 0, 0.05);
+$color-primary-low-10: rgba(229, 17, 0, 0.1);
+$color-primary-low-25: rgba(229, 17, 0, 0.25);
+$color-primary-low-50: rgba(229, 17, 0, 0.5);
+$color-primary-low-75: rgba(229, 17, 0, 0.75);
+
+$color-secondary: rgba(54, 216, 231, 1);
+$color-secondary-10: rgba(54, 216, 231, 0.1);
+$color-secondary-25: rgba(54, 216, 231, 0.25);
+$color-secondary-50: rgba(54, 216, 231, 0.5);
+$color-secondary-75: rgba(54, 216, 231, 0.75);
+
+$color-secondary-high: rgb(52, 149, 215);
+$color-secondary-medium: rgb(89, 169, 223);
+$color-secondary-low: rgb(134, 202, 248);
+
+$color-secondary-v-high: rgba(46, 128, 135, 1);
+
+$color-success: rgba(110, 216, 35, 1);
+$color-success-10: rgba(110, 216, 35, 0.1);
+$color-success-25: rgba(110, 216, 35, 0.25);
+$color-success-50: rgba(110, 216, 35, 0.5);
+$color-success-75: rgba(110, 216, 35, 0.75);
+
+$color-success-high: rgb(124, 188, 49);
+$color-success-medium: rgb(166, 219, 104);
+$color-success-low: rgb(202, 235, 164);
+
+$color-success-v-high: rgba(68, 128, 26, 1);
+
+$color-warning: rgba(255, 162, 29, 1);
+$color-warning-10: rgba(255, 162, 29, 0.1);
+$color-warning-25: rgba(255, 162, 29, 0.25);
+$color-warning-50: rgba(255, 162, 29, 0.5);
+$color-warning-75: rgba(255, 162, 29, 0.75);
+
+$color-warning-high: rgb(243, 229, 48);
+$color-warning-medium: rgb(248, 238, 115);
+$color-warning-low: rgb(241, 236, 173);
+
+$color-warning-v-high: rgba(140, 94, 28, 1);
+
+$color-error: rgba(197, 0, 0, 1);
+$color-error-10: rgba(197, 0, 0, 0.1);
+$color-error-25: rgba(197, 0, 0, 0.25);
+$color-error-50: rgba(197, 0, 0, 0.5);
+$color-error-75: rgba(197, 0, 0, 0.75);
+
+$color-error-high: rgb(209, 19, 40);
+$color-error-medium: rgb(237, 72, 90);
+$color-error-low: rgb(255, 133, 146);
+
+$color-error-v-high: rgba(197, 0, 0, 1);
+
+/* Neutral Colors */
+$color-neutral-black: rgb(35, 35, 35);
+$color-neutral-black-10: rgba(35, 35, 35, 0.1);
+$color-neutral-black-25: rgba(35, 35, 35, 0.25);
+$color-neutral-black-50: rgba(35, 35, 35, 0.5);
+$color-neutral-black-75: rgba(35, 35, 35, 0.75);
+
+$color-neutral-black-high: rgb(0, 0, 0);
+$color-neutral-black-medium: rgb(42, 42, 42);
+$color-neutral-black-low: rgb(89, 89, 89);
+
+$color-neutral-dark: rgb(74, 74, 74);
+$color-neutral-dark-10: rgba(74, 74, 74, 0.1);
+$color-neutral-dark-25: rgba(74, 74, 74, 0.25);
+$color-neutral-dark-50: rgba(74, 74, 74, 0.5);
+$color-neutral-dark-75: rgba(74, 74, 74, 0.75);
+
+$color-neutral-dark-high: rgb(53, 53, 53);
+$color-neutral-dark-medium: rgb(120, 120, 120);
+$color-neutral-dark-low: rgb(234, 234, 234);
+
+$color-neutral-light: rgb(203, 203, 203);
+$color-neutral-light-10: rgba(203, 203, 203, 0.1);
+$color-neutral-light-25: rgba(203, 203, 203, 0.25);
+$color-neutral-light-50: rgba(203, 203, 203, 0.5);
+$color-neutral-light-75: rgba(203, 203, 203, 0.75);
+
+$color-neutral-light-high: rgb(152, 152, 152);
+$color-neutral-light-medium: rgb(189, 189, 189);
+$color-neutral-light-low: rgb(241, 241, 241);
+
+$color-neutral-white: rgb(255, 255, 255);
+$color-neutral-white-10: rgba(255, 255, 255, 0.1);
+$color-neutral-white-25: rgba(255, 255, 255, 0.25);
+$color-neutral-white-50: rgba(255, 255, 255, 0.5);
+$color-neutral-white-75: rgba(255, 255, 255, 0.75);

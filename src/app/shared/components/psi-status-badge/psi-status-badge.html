@@ -1,0 +1,34 @@
+<div
+  class="status-badge"
+  [class.status-badge--small]="badgeSize === 'small'"
+  [class.status-badge--medium]="badgeSize === 'medium'"
+  [class.status-badge--large]="badgeSize === 'large'"
+  [class.status-badge__secondary-high]="statusType === 'secondary-high'"
+  [class.status-badge__secondary-med]="statusType === 'secondary-med'"
+  [class.status-badge__secondary]="statusType === 'secondary'"
+  [class.status-badge__info]="statusType === 'info'"
+  [class.status-badge__info-med]="statusType === 'info-med'"
+  [class.status-badge__success]="statusType === 'success'"
+  [class.status-badge__success-med]="statusType === 'success-med'"
+  [class.status-badge__warning]="statusType === 'warning'"
+  [class.status-badge__warning-med]="statusType === 'warning-med'"
+  [class.status-badge__error]="statusType === 'error'"
+  [class.status-badge__error-med]="statusType === 'error-med'"
+>
+  @if (badgeSize === 'large') {
+  <span
+    class="typo-mon-paragraph-black-medium"
+    [textContent]="statusText | titlecase"
+  ></span>
+  } @else if (badgeSize === 'medium') {
+  <span
+    class="typo-mon-caption-black-medium"
+    [textContent]="statusText | titlecase"
+  ></span>
+  } @else if (badgeSize === 'small') {
+  <span
+    class="typo-mon-small-black-medium"
+    [textContent]="statusText | titlecase"
+  ></span>
+  }
+</div>

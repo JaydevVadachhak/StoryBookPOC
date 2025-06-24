@@ -16,19 +16,10 @@
   [class.status-badge__error-med]="statusType === 'error-med'"
 >
   @if (badgeSize === 'large') {
-  <span
-    class="typo-mon-paragraph-black-medium"
-    [textContent]="statusText | titlecase"
-  ></span>
+  <span class="typo-mon-paragraph-black-medium" [textContent]="statusText | titlecase"></span>
   } @else if (badgeSize === 'medium') {
-  <span
-    class="typo-mon-caption-black-medium"
-    [textContent]="statusText | titlecase"
-  ></span>
+  <span class="typo-mon-caption-black-medium" [textContent]="statusText | titlecase"></span>
   } @else if (badgeSize === 'small') {
-  <span
-    class="typo-mon-small-black-medium"
-    [textContent]="statusText | titlecase"
-  ></span>
+  <span class="typo-mon-small-black-medium" [textContent]="statusText | titlecase"></span>
   }
 </div>

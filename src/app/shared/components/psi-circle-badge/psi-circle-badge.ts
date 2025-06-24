@@ -9,6 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class PsiCircleBadge {
   @Input() statusText: string = '--';
-  @Input() statusType: 'secondary' | 'success' | 'warning' | 'error' | 'info' =
-    'secondary';
+  @Input() statusType: 'secondary' | 'success' | 'warning' | 'error' | 'info' = 'secondary';
 }

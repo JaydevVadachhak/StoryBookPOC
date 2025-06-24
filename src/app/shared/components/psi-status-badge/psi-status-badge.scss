@@ -1,4 +1,4 @@
-@use "../../../../app/scss/_colors" as *;
+@use '../../../../app/scss/_colors' as *;
 
 .status-badge {
   display: flex;
@@ -20,7 +20,7 @@
   }
 
   &__text {
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
   }
 
   &__secondary-high {

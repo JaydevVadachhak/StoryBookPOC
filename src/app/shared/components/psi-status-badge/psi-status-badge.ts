@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './psi-status-badge.scss',
   standalone: true,
 })
-export class PSIStatusBadgeComponent {
+export class PSIStatusBadge {
   @Input() statusText: string = 'success';
   @Input() badgeSize: 'small' | 'medium' | 'large' = 'small';
   @Input() statusType:

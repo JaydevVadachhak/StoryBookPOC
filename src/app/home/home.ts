@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { PSIStatusBadgeComponent } from '../shared/components/psi-status-badge/psi-status-badge';
+import { PSIStatusBadge } from '../shared/components/psi-status-badge/psi-status-badge';
 
 @Component({
   selector: 'app-home',
-  imports: [PSIStatusBadgeComponent],
+  imports: [PSIStatusBadge],
   templateUrl: './home.html',
   styleUrl: './home.scss',
   standalone: true,

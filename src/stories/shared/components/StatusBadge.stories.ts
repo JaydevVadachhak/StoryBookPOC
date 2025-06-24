@@ -1,11 +1,11 @@
 import { Meta, StoryObj, applicationConfig } from '@storybook/angular';
 import { importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { PSIStatusBadgeComponent } from '../../../app/shared/components/psi-status-badge/psi-status-badge';
+import { PSIStatusBadge } from '../../../app/shared/components/psi-status-badge/psi-status-badge';
 
-const meta: Meta<PSIStatusBadgeComponent> = {
+const meta: Meta<PSIStatusBadge> = {
   title: 'Components/Status Badge',
-  component: PSIStatusBadgeComponent,
+  component: PSIStatusBadge,
   tags: ['autodocs'],
   decorators: [
     applicationConfig({
@@ -43,7 +43,7 @@ const meta: Meta<PSIStatusBadgeComponent> = {
 };
 
 export default meta;
-type Story = StoryObj<PSIStatusBadgeComponent>;
+type Story = StoryObj<PSIStatusBadge>;
 
 export const Default: Story = {
   args: {

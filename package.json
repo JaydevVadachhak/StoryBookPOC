@@ -35,6 +35,7 @@
     "@compodoc/compodoc": "^1.1.26",
     "@storybook/addon-docs": "^9.0.12",
     "@storybook/addon-onboarding": "^9.0.12",
+    "@storybook/addon-styling-webpack": "^2.0.0",
     "@storybook/angular": "^9.0.12",
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",

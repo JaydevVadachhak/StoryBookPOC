@@ -2,6 +2,7 @@ import { applicationConfig, Meta, StoryObj } from '@storybook/angular';
 import { PsiAlert } from '../../../app/shared/components/psi-alert/psi-alert';
 import { importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { componentWrapperDecorator } from '@storybook/angular';
 
 const meta: Meta<PsiAlert> = {
   title: 'Components/Alert',
@@ -11,6 +12,7 @@ const meta: Meta<PsiAlert> = {
     applicationConfig({
       providers: [importProvidersFrom(BrowserModule)],
     }),
+    componentWrapperDecorator((story) => `<div style="margin: 3em">${story}</div>`)
   ],
   argTypes: {
     title: {
@@ -43,29 +45,29 @@ export const Default: Story = {
     title: 'Success Message',
     type: 'success',
     position: 'bottom-right',
-  },
+  }
 };
 
-export const Error: Story = {
+export const AlertWithTopRight: Story = {
   args: {
     title: 'Error Message',
     type: 'error',
-    position: 'bottom-right',
+    position: 'top-right',
   },
 };
 
-export const Warning: Story = {
+export const AlertWithBottomLeft: Story = {
   args: {
     title: 'Warning Message',
     type: 'warning',
-    position: 'top-right',
+    position: 'bottom-left',
   },
 };
 
-export const Info: Story = {
+export const AlertWithTopLeft: Story = {
   args: {
     title: 'Info Message',
     type: 'info',
-    position: 'top-right',
+    position: 'top-left',
   },
 };

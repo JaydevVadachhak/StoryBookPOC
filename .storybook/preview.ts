@@ -11,6 +11,14 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    // TODO: Add backgrounds
+    // backgrounds: {
+    //   default: 'light',
+    //   values: [
+    //     { name: 'light', value: '#ffffff' },
+    //     { name: 'dark', value: '#000000' },
+    //   ],
+    // },
   },
 };
 

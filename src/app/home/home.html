@@ -210,3 +210,22 @@
   <app-psi-circle-badge [statusText]="'Error'" [statusType]="'error'"></app-psi-circle-badge>
   <app-psi-circle-badge [statusText]="'Info'" [statusType]="'info'"></app-psi-circle-badge>
 </div>
+
+<h1>Alert</h1>
+
+<div class="alert-container">
+  <app-psi-alert
+    [title]="'Alert'"
+    type="warning"
+    position="bottom-left"
+    [timeout]="3000"
+  ></app-psi-alert>
+  <app-psi-alert
+    [title]="'Alert'"
+    type="error"
+    position="top-right"
+    [timeout]="5000"
+  ></app-psi-alert>
+  <app-psi-alert [title]="'Alert'" type="info" position="top-left" [timeout]="7000"></app-psi-alert>
+  <app-psi-alert [title]="'Alert'" type="success" position="bottom-right"></app-psi-alert>
+</div>

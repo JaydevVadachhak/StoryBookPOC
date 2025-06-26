@@ -1,0 +1,12 @@
+<div
+  class="psi-alert psi-alert__{{ type }} psi-alert__{{ position }}"
+  *ngIf="visible"
+  (click)="close()"
+>
+  <div class="psi-alert__content psi-alert__content--{{ type }}">
+    <div class="psi-alert__title" [textContent]="title"></div>
+  </div>
+  <div class="psi-alert__icon psi-alert__icon--{{ type }}">
+    <fa-icon class="psi-alert__icon-icon" [icon]="faTimes"></fa-icon>
+  </div>
+</div>

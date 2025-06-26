@@ -1,14 +1,25 @@
 @use './_colors' as *;
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-family-mon: 'Montserrat', sans-serif;
+$font-family-cri: 'Crimson Pro', serif;
 
 /* Montserrat */
 [class*='typo-mon'] {
-  font-family: 'Montserrat';
+  font-family: $font-family-mon;
   letter-spacing: 0px;
-  vertical-align: middle;
+}
+
+[class^='typo-mon-'][class*='-caps-'] {
+  text-transform: uppercase;
 }
 
 [class^='typo-mon-'][class*='-black-'] {
   color: $color-neutral-black;
+}
+
+[class^='typo-mon-'][class*='-bold-'] {
+  font-weight: 700;
 }
 
 [class^='typo-mon-'][class*='-medium'] {
@@ -39,24 +50,70 @@
   line-height: 20px;
 }
 
-/* Crimson Pro */
-[class*='typo-cri'] {
-  font-family: 'Crimson Pro';
-  letter-spacing: 0px;
-  vertical-align: middle;
+[class^='typo-mon-link'] {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline;
 }
 
-[class*='typo-cri-'][class*='-neutral-black-'] {
+/* Crimson Pro */
+[class*='typo-cri'] {
+  font-family: $font-family-cri;
+  letter-spacing: 0px;
+}
+
+[class^='typo-cri-'][class*='-caps-'] {
+  text-transform: uppercase;
+}
+
+[class*='typo-cri-'][class*='-black-'] {
   color: $color-neutral-black;
+}
+
+[class*='typo-cri-'][class*='-white-'] {
+  color: $color-neutral-white;
+}
+
+[class^='typo-cri-'][class*='-bold-'] {
+  font-weight: 700;
 }
 
 [class*='typo-cri-'][class*='-medium-'] {
   font-weight: 500;
 }
 
+[class*='typo-cri-'][class*='-regular-'] {
+  font-weight: 400;
+}
+
 [class*='typo-cri-paragraph'] {
   font-size: 12px;
   line-height: 16px;
+}
+
+[class*='typo-cri-h1'] {
+  font-size: 56px;
+  line-height: 72px;
+}
+
+[class*='typo-cri-h2'] {
+  font-size: 40px;
+  line-height: 56px;
+}
+
+[class*='typo-cri-h3'] {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+[class*='typo-cri-h4'] {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+[class*='typo-cri-h5'] {
+  font-size: 20px;
+  line-height: 28px;
 }
 
 [class*='typo-cri-h6'] {

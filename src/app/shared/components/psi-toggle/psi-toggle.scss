@@ -1,0 +1,118 @@
+@use '../../../scss/colors' as *;
+@use '../../../scss/shadows' as *;
+@use '../../../scss/_typograohy' as *;
+
+.psi-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  &__container {
+    position: relative;
+  }
+
+  &__track {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  &__thumb {
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  &__avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // Medium size toggle
+  &--medium {
+    .psi-toggle__track {
+      width: 44px;
+      height: 24px;
+    }
+
+    .psi-toggle__thumb {
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  // Small size toggle
+  &--small {
+    .psi-toggle__track {
+      width: 32px;
+      height: 16px;
+    }
+
+    .psi-toggle__thumb {
+      top: 2px;
+      left: 2px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  // On state
+  &--on {
+    .psi-toggle__track {
+      background-color: $color-success;
+    }
+
+    .psi-toggle__thumb {
+      background-color: $color-neutral-white;
+    }
+
+    &.psi-toggle--medium .psi-toggle__thumb {
+      transform: translateX(20px);
+    }
+
+    &.psi-toggle--small .psi-toggle__thumb {
+      transform: translateX(16px);
+    }
+  }
+
+  // Off state
+  &--off {
+    .psi-toggle__track {
+      background-color: $color-neutral-dark;
+    }
+
+    .psi-toggle__thumb {
+      background-color: $color-neutral-white;
+    }
+  }
+
+  // Disabled state
+  &--disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  // Label styles
+  &__label {
+    color: $color-neutral-black;
+
+    &--medium {
+      font-size: 14px;
+    }
+
+    &--small {
+      font-size: 12px;
+    }
+
+    &--disabled {
+      color: $color-neutral-dark;
+    }
+  }
+} 

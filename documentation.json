@@ -110,7 +110,7 @@
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<h1>Status Badge</h1>\n\n<div class=\"status-badge-container\">\n  <div class=\"status-badge-container__row\">\n    <h4 class=\"typo-cri-h6-black-medium\">Secondary</h4>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'small'\"\n      [statusType]=\"'secondary'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'medium'\"\n      [statusType]=\"'secondary'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'large'\"\n      [statusType]=\"'secondary'\"\n    ></app-psi-status-badge>\n  </div>\n  <div class=\"status-badge-container__row\">\n    <h4 class=\"typo-cri-h6-black-medium\">Secondary High</h4>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'small'\"\n      [statusType]=\"'secondary-high'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'medium'\"\n      [statusType]=\"'secondary-high'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'large'\"\n      [statusType]=\"'secondary-high'\"\n    ></app-psi-status-badge>\n  </div>\n  <div class=\"status-badge-container__row\">\n    <h4 class=\"typo-cri-h6-black-medium\">Secondary Medium</h4>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'small'\"\n      [statusType]=\"'secondary-med'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'medium'\"\n      [statusType]=\"'secondary-med'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'large'\"\n      [statusType]=\"'secondary-med'\"\n    ></app-psi-status-badge>\n  </div>\n  <div class=\"status-badge-container__row\">\n    <h4 class=\"typo-cri-h6-black-medium\">Info</h4>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'small'\"\n      [statusType]=\"'info'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'medium'\"\n      [statusType]=\"'info'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'large'\"\n      [statusType]=\"'info'\"\n    ></app-psi-status-badge>\n  </div>\n  <div class=\"status-badge-container__row\">\n    <h4 class=\"typo-cri-h6-black-medium\">Info Medium</h4>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'small'\"\n      [statusType]=\"'info-med'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'medium'\"\n      [statusType]=\"'info-med'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'large'\"\n      [statusType]=\"'info-med'\"\n    ></app-psi-status-badge>\n  </div>\n  <div class=\"status-badge-container__row\">\n    <h4 class=\"typo-cri-h6-black-medium\">Success</h4>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'small'\"\n      [statusType]=\"'success'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'medium'\"\n      [statusType]=\"'success'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'large'\"\n      [statusType]=\"'success'\"\n    ></app-psi-status-badge>\n  </div>\n  <div class=\"status-badge-container__row\">\n    <h4 class=\"typo-cri-h6-black-medium\">Success Medium</h4>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'small'\"\n      [statusType]=\"'success-med'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'medium'\"\n      [statusType]=\"'success-med'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'large'\"\n      [statusType]=\"'success-med'\"\n    ></app-psi-status-badge>\n  </div>\n  <div class=\"status-badge-container__row\">\n    <h4 class=\"typo-cri-h6-black-medium\">Warning</h4>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'small'\"\n      [statusType]=\"'warning'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'medium'\"\n      [statusType]=\"'warning'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'large'\"\n      [statusType]=\"'warning'\"\n    ></app-psi-status-badge>\n  </div>\n  <div class=\"status-badge-container__row\">\n    <h4 class=\"typo-cri-h6-black-medium\">Warning Medium</h4>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'small'\"\n      [statusType]=\"'warning-med'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'medium'\"\n      [statusType]=\"'warning-med'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'large'\"\n      [statusType]=\"'warning-med'\"\n    ></app-psi-status-badge>\n  </div>\n  <div class=\"status-badge-container__row\">\n    <h4 class=\"typo-cri-h6-black-medium\">Error</h4>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'small'\"\n      [statusType]=\"'error'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'medium'\"\n      [statusType]=\"'error'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'large'\"\n      [statusType]=\"'error'\"\n    ></app-psi-status-badge>\n  </div>\n  <div class=\"status-badge-container__row\">\n    <h4 class=\"typo-cri-h6-black-medium\">Error Medium</h4>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'small'\"\n      [statusType]=\"'error-med'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'medium'\"\n      [statusType]=\"'error-med'\"\n    ></app-psi-status-badge>\n    <app-psi-status-badge\n      [statusText]=\"'Success'\"\n      [badgeSize]=\"'large'\"\n      [statusType]=\"'error-med'\"\n    ></app-psi-status-badge>\n  </div>\n</div>\n\n<h1>Circle Badge</h1>\n\n<div class=\"circle-badge-container\">\n  <app-psi-circle-badge [statusText]=\"'Text'\" [statusType]=\"'secondary'\"></app-psi-circle-badge>\n  <app-psi-circle-badge [statusText]=\"'Success'\" [statusType]=\"'success'\"></app-psi-circle-badge>\n  <app-psi-circle-badge [statusText]=\"'Warning'\" [statusType]=\"'warning'\"></app-psi-circle-badge>\n  <app-psi-circle-badge [statusText]=\"'Error'\" [statusType]=\"'error'\"></app-psi-circle-badge>\n  <app-psi-circle-badge [statusText]=\"'Info'\" [statusType]=\"'info'\"></app-psi-circle-badge>\n</div>\n\n<h1>Alert</h1>\n\n<div class=\"alert-container\">\n  <app-psi-alert\n    [title]=\"'Alert'\"\n    type=\"warning\"\n    position=\"bottom-left\"\n    [timeout]=\"3000\"\n  ></app-psi-alert>\n  <app-psi-alert\n    [title]=\"'Alert'\"\n    type=\"error\"\n    position=\"top-right\"\n    [timeout]=\"5000\"\n  ></app-psi-alert>\n  <app-psi-alert [title]=\"'Alert'\" type=\"info\" position=\"top-left\" [timeout]=\"7000\"></app-psi-alert>\n  <app-psi-alert [title]=\"'Alert'\" type=\"success\" position=\"bottom-right\"></app-psi-alert>\n</div>\n"
+            "templateData": "<h1>PSI Design System</h1>"
         },
         {
             "name": "PsiAlert",
@@ -480,6 +480,291 @@
             "templateData": "<div class=\"circle-badge\">\n  <div\n    class=\"circle-badge__icon\"\n    [class.circle-badge__icon--secondary]=\"statusType === 'secondary'\"\n    [class.circle-badge__icon--success]=\"statusType === 'success'\"\n    [class.circle-badge__icon--warning]=\"statusType === 'warning'\"\n    [class.circle-badge__icon--error]=\"statusType === 'error'\"\n    [class.circle-badge__icon--info]=\"statusType === 'info'\"\n  ></div>\n  <div\n    class=\"typo-mon-body-black-regular circle-badge__text\"\n    [textContent]=\"statusText | titlecase\"\n  ></div>\n</div>\n"
         },
         {
+            "name": "PsiRadio",
+            "id": "component-PsiRadio-4bb61e9fe8ae5362470b192471ccd03f219d012136ece4ec967ddc75c70c238b966652ace57bc6e447ecbef2f9335f30cf1cd587711828161680e29f891b800b",
+            "file": "src/app/shared/components/psi-radio/psi-radio.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => PsiRadio), multi: true\n}"
+                }
+            ],
+            "selector": "app-psi-radio",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./psi-radio.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "checked",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "name",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "\"medium\" | \"small\"",
+                    "decorators": []
+                },
+                {
+                    "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "any",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "checkedChange",
+                    "defaultValue": "new EventEmitter<boolean>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "onChange",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 29,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "onTouched",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 30,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 47,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 51,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "select",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 32,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "setDisabledState",
+                    "args": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 55,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 43,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter, forwardRef } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\n\n@Component({\n  selector: 'app-psi-radio',\n  standalone: true,\n  imports: [CommonModule],\n  templateUrl: './psi-radio.html',\n  styleUrl: './psi-radio.scss',\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => PsiRadio),\n      multi: true\n    }\n  ]\n})\nexport class PsiRadio implements ControlValueAccessor {\n  @Input() checked: boolean = false;\n  @Input() disabled: boolean = false;\n  @Input() size: 'medium' | 'small' = 'medium';\n  @Input() label: string = '';\n  @Input() name: string = '';\n  @Input() value: any;\n  @Output() checkedChange = new EventEmitter<boolean>();\n\n  // ControlValueAccessor implementation\n  private onChange: any = () => {};\n  private onTouched: any = () => {};\n\n  select() {\n    if (this.disabled || this.checked) {\n      return;\n    }\n    this.checked = true;\n    this.onChange(this.value);\n    this.onTouched();\n    this.checkedChange.emit(this.checked);\n  }\n\n  // ControlValueAccessor interface methods\n  writeValue(value: any): void {\n    this.checked = value === this.value;\n  }\n\n  registerOnChange(fn: any): void {\n    this.onChange = fn;\n  }\n\n  registerOnTouched(fn: any): void {\n    this.onTouched = fn;\n  }\n\n  setDisabledState(isDisabled: boolean): void {\n    this.disabled = isDisabled;\n  }\n\n  get radioClasses() {\n    return {\n      'psi-radio': true,\n      'psi-radio--checked': this.checked,\n      'psi-radio--unchecked': !this.checked,\n      'psi-radio--disabled': this.disabled,\n      'psi-radio--medium': this.size === 'medium',\n      'psi-radio--small': this.size === 'small'\n    };\n  }\n\n  get labelClasses() {\n    return {\n      'psi-radio__label': true,\n      'psi-radio__label--disabled': this.disabled,\n      'psi-radio__label--medium': this.size === 'medium',\n      'psi-radio__label--small': this.size === 'small'\n    };\n  }\n} ",
+            "styleUrl": "./psi-radio.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "ControlValueAccessor"
+            ],
+            "accessors": {
+                "radioClasses": {
+                    "name": "radioClasses",
+                    "getSignature": {
+                        "name": "radioClasses",
+                        "type": "",
+                        "returnType": "",
+                        "line": 59
+                    }
+                },
+                "labelClasses": {
+                    "name": "labelClasses",
+                    "getSignature": {
+                        "name": "labelClasses",
+                        "type": "",
+                        "returnType": "",
+                        "line": 70
+                    }
+                }
+            },
+            "templateData": "<div [ngClass]=\"radioClasses\" (click)=\"select()\" role=\"radio\" [attr.aria-checked]=\"checked\" [attr.aria-disabled]=\"disabled\">\n  <div class=\"psi-radio__container\">\n    <div class=\"psi-radio__outer-circle\"></div>\n    <div class=\"psi-radio__inner-circle\" *ngIf=\"checked\"></div>\n  </div>\n  <span *ngIf=\"label\" [ngClass]=\"labelClasses\" class=\"typo-mon-body-black-regular\">{{ label }}</span>\n</div> "
+        },
+        {
             "name": "PSIStatusBadge",
             "id": "component-PSIStatusBadge-786ef7b3cee5ebbe6a5f6fcd2bdca8c4c76a850a504bbf2f8faa62d0e159b2efc20724e83fe7cf11cea95331bf4967e274c56ff4039b569f786a2e3e79d1dee5",
             "file": "src/app/shared/components/psi-status-badge/psi-status-badge.ts",
@@ -549,6 +834,283 @@
             "stylesData": "",
             "extends": [],
             "templateData": "<div\n  class=\"status-badge\"\n  [class.status-badge--small]=\"badgeSize === 'small'\"\n  [class.status-badge--medium]=\"badgeSize === 'medium'\"\n  [class.status-badge--large]=\"badgeSize === 'large'\"\n  [class.status-badge__secondary-high]=\"statusType === 'secondary-high'\"\n  [class.status-badge__secondary-med]=\"statusType === 'secondary-med'\"\n  [class.status-badge__secondary]=\"statusType === 'secondary'\"\n  [class.status-badge__info]=\"statusType === 'info'\"\n  [class.status-badge__info-med]=\"statusType === 'info-med'\"\n  [class.status-badge__success]=\"statusType === 'success'\"\n  [class.status-badge__success-med]=\"statusType === 'success-med'\"\n  [class.status-badge__warning]=\"statusType === 'warning'\"\n  [class.status-badge__warning-med]=\"statusType === 'warning-med'\"\n  [class.status-badge__error]=\"statusType === 'error'\"\n  [class.status-badge__error-med]=\"statusType === 'error-med'\"\n>\n  @if (badgeSize === 'large') {\n  <span class=\"typo-mon-paragraph-black-medium\" [textContent]=\"statusText | titlecase\"></span>\n  } @else if (badgeSize === 'medium') {\n  <span class=\"typo-mon-caption-black-medium\" [textContent]=\"statusText | titlecase\"></span>\n  } @else if (badgeSize === 'small') {\n  <span class=\"typo-mon-small-black-medium\" [textContent]=\"statusText | titlecase\"></span>\n  }\n</div>\n"
+        },
+        {
+            "name": "PsiToggle",
+            "id": "component-PsiToggle-4b23f3c8ffcd1ac6c915d41f911be840955bc81a28e2394779659e07e7fedcc87af46d85e4da939b281cdbe8a1cca802b09bc9f7b7ee214aa86ef5bfc842f144",
+            "file": "src/app/shared/components/psi-toggle/psi-toggle.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => PsiToggle), multi: true\n}"
+                }
+            ],
+            "selector": "app-psi-toggle",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./psi-toggle.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "avatarSrc",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "checked",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "\"medium\" | \"small\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "checkedChange",
+                    "defaultValue": "new EventEmitter<boolean>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "onChange",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 28,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "onTouched",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 29,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 46,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 50,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setDisabledState",
+                    "args": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 54,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "toggle",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 42,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter, forwardRef } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\n\n@Component({\n  selector: 'app-psi-toggle',\n  standalone: true,\n  imports: [CommonModule],\n  templateUrl: './psi-toggle.html',\n  styleUrl: './psi-toggle.scss',\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => PsiToggle),\n      multi: true\n    }\n  ]\n})\nexport class PsiToggle implements ControlValueAccessor {\n  @Input() checked: boolean = false;\n  @Input() disabled: boolean = false;\n  @Input() size: 'medium' | 'small' = 'medium';\n  @Input() label: string = '';\n  @Input() avatarSrc: string = '';\n  @Output() checkedChange = new EventEmitter<boolean>();\n\n  // ControlValueAccessor implementation\n  private onChange: any = () => {};\n  private onTouched: any = () => {};\n\n  toggle() {\n    if (this.disabled) {\n      return;\n    }\n    this.checked = !this.checked;\n    this.onChange(this.checked);\n    this.onTouched();\n    this.checkedChange.emit(this.checked);\n  }\n\n  // ControlValueAccessor interface methods\n  writeValue(value: boolean): void {\n    this.checked = value;\n  }\n\n  registerOnChange(fn: any): void {\n    this.onChange = fn;\n  }\n\n  registerOnTouched(fn: any): void {\n    this.onTouched = fn;\n  }\n\n  setDisabledState(isDisabled: boolean): void {\n    this.disabled = isDisabled;\n  }\n\n  get toggleClasses() {\n    return {\n      'psi-toggle': true,\n      'psi-toggle--on': this.checked,\n      'psi-toggle--off': !this.checked,\n      'psi-toggle--disabled': this.disabled,\n      'psi-toggle--medium': this.size === 'medium',\n      'psi-toggle--small': this.size === 'small'\n    };\n  }\n\n  get labelClasses() {\n    return {\n      'psi-toggle__label': true,\n      'psi-toggle__label--disabled': this.disabled,\n      'psi-toggle__label--medium': this.size === 'medium',\n      'psi-toggle__label--small': this.size === 'small'\n    };\n  }\n} ",
+            "styleUrl": "./psi-toggle.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "ControlValueAccessor"
+            ],
+            "accessors": {
+                "toggleClasses": {
+                    "name": "toggleClasses",
+                    "getSignature": {
+                        "name": "toggleClasses",
+                        "type": "",
+                        "returnType": "",
+                        "line": 58
+                    }
+                },
+                "labelClasses": {
+                    "name": "labelClasses",
+                    "getSignature": {
+                        "name": "labelClasses",
+                        "type": "",
+                        "returnType": "",
+                        "line": 69
+                    }
+                }
+            },
+            "templateData": "<div [ngClass]=\"toggleClasses\" (click)=\"toggle()\" role=\"switch\" [attr.aria-checked]=\"checked\" [attr.aria-disabled]=\"disabled\">\n  <div class=\"psi-toggle__container\">\n    <div class=\"psi-toggle__track\"></div>\n    <div class=\"psi-toggle__thumb\">\n      <img *ngIf=\"checked && avatarSrc\" [src]=\"avatarSrc\" class=\"psi-toggle__avatar\" alt=\"Toggle avatar\" />\n    </div>\n  </div>\n  <span *ngIf=\"label\" [ngClass]=\"labelClasses\" class=\"typo-mon-body-black-regular\">{{ label }}</span>\n</div> "
         }
     ],
     "modules": [],
@@ -760,7 +1322,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 6,
+        "count": 5,
         "status": "low",
         "files": [
             {
@@ -849,12 +1411,30 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/shared/components/psi-radio/psi-radio.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PsiRadio",
+                "coveragePercent": 0,
+                "coverageCount": "0/15",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/shared/components/psi-status-badge/psi-status-badge.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "PSIStatusBadge",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/psi-toggle/psi-toggle.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PsiToggle",
+                "coveragePercent": 0,
+                "coverageCount": "0/14",
                 "status": "low"
             },
             {

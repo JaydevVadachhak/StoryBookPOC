@@ -1,0 +1,110 @@
+@use '../../../scss/colors' as *;
+@use '../../../scss/shadows' as *;
+@use '../../../scss/_typograohy' as *;
+
+.psi-alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  gap: 16px;
+  border-radius: 8px;
+  min-width: 164px;
+  height: 24px;
+  position: fixed;
+  z-index: 2;
+  box-shadow: $shadow-black-50;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-family: $font-family-cri;
+
+  &__top-left {
+    top: 16px;
+    left: 16px;
+  }
+
+  &__top-right {
+    top: 16px;
+    right: 16px;
+  }
+
+  &__bottom-left {
+    bottom: 16px;
+    left: 16px;
+  }
+
+  &__bottom-right {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  &__success {
+    background-color: $color-success;
+
+    &:hover {
+      background-color: $color-success-v-medium;
+    }
+  }
+
+  &__error {
+    background-color: $color-error;
+
+    &:hover {
+      background-color: $color-error-v-high;
+    }
+  }
+
+  &__warning {
+    background-color: $color-warning;
+
+    &:hover {
+      background-color: $color-warning-v-high;
+    }
+  }
+
+  &__info {
+    background-color: $color-secondary;
+
+    &:hover {
+      background-color: $color-secondary-v-high;
+    }
+  }
+
+  &__content {
+    &--success {
+      color: $color-neutral-black;
+    }
+
+    &--error {
+      color: $color-neutral-white;
+    }
+
+    &--warning {
+      color: $color-neutral-black;
+    }
+
+    &--info {
+      color: $color-neutral-black;
+    }
+  }
+
+  &__icon {
+    font-size: 16px;
+
+    &--success {
+      color: $color-neutral-black;
+    }
+
+    &--error {
+      color: $color-neutral-white;
+    }
+
+    &--warning {
+      color: $color-neutral-black;
+    }
+
+    &--info {
+      color: $color-neutral-black;
+    }
+  }
+}

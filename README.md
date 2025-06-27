@@ -61,3 +61,27 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Environment Variables
+
+This project uses dotenv to manage environment variables for sensitive information like API tokens.
+
+### Chromatic
+
+The Chromatic token is stored in a `.env` file at the project root:
+
+```
+CHROMATIC_TOKEN=your_token_here
+```
+
+To run Chromatic:
+
+```bash
+npm run chromatic
+```
+
+For CI/CD pipelines, you can either:
+1. Create a `.env` file during the build process
+2. Set environment variables directly in your CI platform
+
+**Note:** The `.env` file is ignored by git to keep sensitive information out of version control.

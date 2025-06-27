@@ -14,3 +14,56 @@ $shadow-secondary-25: 0 4px 8px 0 rgba(119, 194, 245, 0.15);
 $shadow-secondary-50: 0 8px 16px 0 rgba(119, 194, 245, 0.15);
 $shadow-secondary-75: 0 12px 24px 0 rgba(119, 194, 245, 0.15);
 $shadow-secondary-100: 0 16px 40px 0 rgba(119, 194, 245, 0.15);
+
+/* Shadow Primary */
+.shadow-primary-100 {
+  box-shadow: 0px 16px 40px 0px rgba(231, 69, 54, 0.15);
+}
+
+.shadow-primary-75 {
+  box-shadow: 0px 12px 24px 0px rgba(231, 69, 54, 0.15);
+}
+
+.shadow-primary-50 {
+  box-shadow: 0px 8px 16px 0px rgba(231, 69, 54, 0.15);
+}
+
+.shadow-primary-25 {
+  box-shadow: 0px 4px 8px 0px rgba(231, 69, 54, 0.15);
+}
+
+/* Shadow Black */
+.shadow-black-100 {
+  box-shadow: 0px 16px 40px 0px rgba(74, 74, 74, 0.15);
+}
+
+.shadow-black-75 {
+  box-shadow: 0px 12px 24px 0px rgba(74, 74, 74, 0.15);
+}
+
+.shadow-black-50 {
+  box-shadow: 0px 8px 16px 0px rgba(74, 74, 74, 0.15);
+}
+
+.shadow-black-25 {
+  box-shadow: 0px 4px 8px 0px rgba(74, 74, 74, 0.15);
+}
+
+/* Shadow Light */
+.shadow-light-100 {
+  box-shadow: 0px 4px 8px 0px rgba(203, 203, 203, 0.15);
+}
+
+/* Shadow Dark */
+.shadow-dark-100 {
+  box-shadow: 0px 4px 8px 0px rgba(74, 74, 74, 0.15);
+}
+
+/* Shadow Modal */
+.shadow-modal-100 {
+  box-shadow: 0px 8px 16px 0px rgba(74, 74, 74, 0.15);
+}
+
+.shadow-modal-25 {
+  box-shadow: 0px 1px 3px 0px rgba(223, 227, 232, 1) inset;
+}

@@ -2,6 +2,7 @@ import { Meta, StoryObj, applicationConfig } from '@storybook/angular';
 import { importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { PSIStatusBadge } from '../../../app/shared/components/psi-status-badge/psi-status-badge';
+import { componentWrapperDecorator } from '@storybook/angular';
 
 const meta: Meta<PSIStatusBadge> = {
   title: 'Components/Status Badge',
@@ -11,6 +12,7 @@ const meta: Meta<PSIStatusBadge> = {
     applicationConfig({
       providers: [importProvidersFrom(BrowserModule)],
     }),
+    componentWrapperDecorator((story) => `<div style="display: flex; gap: 10px; justify-content: center;">${story}</div>`),
   ],
   argTypes: {
     statusText: {
@@ -53,26 +55,10 @@ export const Default: Story = {
   },
 };
 
-export const Small: Story = {
+export const BadgeWithSizes: Story = {
   args: {
     statusText: 'Active',
     badgeSize: 'small',
-    statusType: 'success',
-  },
-};
-
-export const Medium: Story = {
-  args: {
-    statusText: 'Active',
-    badgeSize: 'medium',
-    statusType: 'success',
-  },
-};
-
-export const Large: Story = {
-  args: {
-    statusText: 'Active',
-    badgeSize: 'large',
     statusType: 'success',
   },
 };

@@ -1,0 +1,37 @@
+<div class="psi-banner psi-banner__{{ type }}" *ngIf="visible">
+  <!-- Banner header with colored bar -->
+  <div class="psi-banner__header psi-banner__header--{{ type }}"></div>
+  
+  <!-- Banner content with icon, text, button, and close -->
+  <div class="psi-banner__content">
+    <!-- Left section: Icon and text -->
+    <div class="psi-banner__left">
+      <!-- Icon -->
+      <div class="psi-banner__icon psi-banner__icon--{{ type }}">
+        <fa-icon [icon]="getIcon()"></fa-icon>
+      </div>
+      
+      <!-- Text content -->
+      <div class="psi-banner__text">
+        <div class="typo-mon-body-black-bold psi-banner__subject">{{ subject }}</div>
+        <div class="typo-mon-paragraph-black-regular psi-banner__message">
+          {{ message }}
+          <a *ngIf="linkText" [href]="linkUrl" class="typo-mon-paragraph-black-medium psi-banner__link">{{ linkText }}</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right section: Action button and close -->
+    <div class="psi-banner__right">
+      <!-- Action button -->
+      <button *ngIf="showButton" class="typo-mon-paragraph-black-medium psi-banner__button" (click)="onButtonClick()">
+        {{ buttonText }}
+      </button>
+      
+      <!-- Close button -->
+      <div class="psi-banner__close" (click)="close()">
+        <fa-icon [icon]="faTimes"></fa-icon>
+      </div>
+    </div>
+  </div>
+</div>

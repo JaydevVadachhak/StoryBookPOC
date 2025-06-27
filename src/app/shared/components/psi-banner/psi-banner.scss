@@ -1,0 +1,158 @@
+@use '../../../scss/colors' as *;
+@use '../../../scss/shadows' as *;
+@use '../../../scss/_typograohy' as *;
+
+.psi-banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: $shadow-black-50;
+  margin-bottom: 16px;
+
+  // Header color bar styles
+  &__header {
+    height: 4px;
+    width: 100%;
+
+    &--success {
+      background-color: $color-success;
+    }
+
+    &--warning {
+      background-color: $color-warning;
+    }
+
+    &--error {
+      background-color: $color-error;
+    }
+
+    &--info {
+      background-color: $color-secondary;
+    }
+  }
+
+  // Main content area
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: $color-neutral-white;
+  }
+
+  // Left side with icon and text
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  // Right side with button and close icon
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  // Icon styles
+  &__icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &--success {
+      color: $color-success;
+    }
+
+    &--warning {
+      color: $color-warning;
+    }
+
+    &--error {
+      color: $color-error;
+    }
+
+    &--info {
+      color: $color-secondary;
+    }
+  }
+
+  // Text content styles
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__subject {
+    // @extend .typo-mon-body-black-bold;
+    color: $color-neutral-black;
+  }
+
+  &__message {
+    // @extend .typo-mon-paragraph-black-regular;
+    color: $color-neutral-dark;
+  }
+
+  &__link {
+    // @extend .typo-mon-paragraph-black-medium;
+    color: $color-primary;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 4px;
+
+    &:hover {
+      color: $color-primary-v-high;
+    }
+  }
+
+  // Button styles
+  &__button {
+    // @extend .typo-mon-paragraph-black-medium;
+    padding: 8px 16px;
+    background-color: $color-neutral-white;
+    border: 1px solid $color-neutral-light;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $color-neutral-beige;
+    }
+  }
+
+  // Close icon styles
+  &__close {
+    color: $color-neutral-dark;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-neutral-black;
+    }
+  }
+
+  // Type-specific background styles
+  &__success {
+    background-color: rgba($color-success, 0.05);
+  }
+
+  &__warning {
+    background-color: rgba($color-warning, 0.05);
+  }
+
+  &__error {
+    background-color: rgba($color-error, 0.05);
+  }
+
+  &__info {
+    background-color: rgba($color-secondary, 0.05);
+  }
+}

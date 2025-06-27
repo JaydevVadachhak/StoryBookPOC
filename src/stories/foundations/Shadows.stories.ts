@@ -1,4 +1,4 @@
-import { componentWrapperDecorator, Meta, StoryObj } from '@storybook/angular';
+import { Meta, StoryObj } from '@storybook/angular';
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 

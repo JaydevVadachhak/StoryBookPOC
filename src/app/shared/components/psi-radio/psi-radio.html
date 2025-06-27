@@ -1,0 +1,7 @@
+<div [ngClass]="radioClasses" (click)="select()" role="radio" [attr.aria-checked]="checked" [attr.aria-disabled]="disabled">
+  <div class="psi-radio__container">
+    <div class="psi-radio__outer-circle"></div>
+    <div class="psi-radio__inner-circle" *ngIf="checked"></div>
+  </div>
+  <span *ngIf="label" [ngClass]="labelClasses" class="typo-mon-body-black-regular">{{ label }}</span>
+</div> 

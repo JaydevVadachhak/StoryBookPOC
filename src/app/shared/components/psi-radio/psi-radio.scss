@@ -1,0 +1,107 @@
+@use '../../../scss/colors' as *;
+@use '../../../scss/shadows' as *;
+@use '../../../scss/_typograohy' as *;
+
+.psi-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__outer-circle {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  &__inner-circle {
+    position: absolute;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  // Medium size radio
+  &--medium {
+    .psi-radio__outer-circle {
+      width: 20px;
+      height: 20px;
+    }
+
+    .psi-radio__inner-circle {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  // Small size radio
+  &--small {
+    .psi-radio__outer-circle {
+      width: 16px;
+      height: 16px;
+    }
+
+    .psi-radio__inner-circle {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  // Checked state
+  &--checked {
+    .psi-radio__outer-circle {
+      border-color: $color-error;
+    }
+
+    .psi-radio__inner-circle {
+      background-color: $color-error;
+    }
+  }
+
+  // Unchecked state
+  &--unchecked {
+    .psi-radio__outer-circle {
+      border-color: $color-neutral-dark;
+    }
+  }
+
+  // Disabled state
+  &--disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &.psi-radio--checked {
+      .psi-radio__outer-circle {
+        border-color: $color-neutral-light;
+      }
+
+      .psi-radio__inner-circle {
+        background-color: $color-neutral-light;
+      }
+    }
+  }
+
+  // Label styles
+  &__label {
+    color: $color-neutral-black;
+
+    &--medium {
+      font-size: 14px;
+    }
+
+    &--small {
+      font-size: 12px;
+    }
+
+    &--disabled {
+      color: $color-neutral-dark;
+    }
+  }
+} 

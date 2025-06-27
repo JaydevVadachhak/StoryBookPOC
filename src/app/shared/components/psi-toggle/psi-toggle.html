@@ -1,0 +1,9 @@
+<div [ngClass]="toggleClasses" (click)="toggle()" role="switch" [attr.aria-checked]="checked" [attr.aria-disabled]="disabled">
+  <div class="psi-toggle__container">
+    <div class="psi-toggle__track"></div>
+    <div class="psi-toggle__thumb">
+      <img *ngIf="checked && avatarSrc" [src]="avatarSrc" class="psi-toggle__avatar" alt="Toggle avatar" />
+    </div>
+  </div>
+  <span *ngIf="label" [ngClass]="labelClasses" class="typo-mon-body-black-regular">{{ label }}</span>
+</div> 

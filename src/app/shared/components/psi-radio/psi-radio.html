@@ -1,4 +1,4 @@
-<div [ngClass]="radioClasses" (click)="select()" role="radio" [attr.aria-checked]="checked" [attr.aria-disabled]="disabled">
+<div [ngClass]="radioClasses" (click)="select()" (keydown)="onKeyDown($event)" role="radio" [attr.aria-checked]="checked" [attr.aria-disabled]="disabled" [attr.tabindex]="disabled ? -1 : 0">
   <div class="psi-radio__container">
     <div class="psi-radio__outer-circle"></div>
     <div class="psi-radio__inner-circle" *ngIf="checked"></div>

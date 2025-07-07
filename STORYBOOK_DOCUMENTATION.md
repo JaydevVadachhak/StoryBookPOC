@@ -4,7 +4,7 @@
 
 Storybook is an open-source tool for building UI components and pages in isolation. It serves as a development environment and playground for UI components. With Storybook, you can visualize different states of your UI components and develop them interactively without worrying about application business logic, dependencies, or requirements.
 
-In this project (`StoryBookPOC`), Storybook is being used to document and showcase a design system called "PSI Liquid Design 3".
+In this project (`StoryBookPOC`), Storybook is being used to document and showcase a design system called "Liquid Design".
 
 ## 2. Prerequisites for Using Storybook with Angular
 
@@ -26,7 +26,7 @@ Additionally, you'll need familiarity with:
 Storybook serves several key purposes in this project:
 
 1. **Component Documentation**: It provides a living, interactive documentation for all UI components
-2. **Design System Implementation**: Helps implement and maintain the "PSI Liquid Design 3" system
+2. **Design System Implementation**: Helps implement and maintain the "Liquid Design" system
 3. **Visual Testing**: Enables visual regression testing through integration with Chromatic
 4. **Development in Isolation**: Allows developers to build components independently from the main application
 5. **Collaboration**: Facilitates communication between designers, developers, and stakeholders by providing a shared reference for UI components

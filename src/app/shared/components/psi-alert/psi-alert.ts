@@ -18,12 +18,12 @@ export class PsiAlert {
   public faTimes = faTimes;
 
   ngOnInit() {
-    if (this.visible && this.timeout) {
+    this.visible = true;
+    
+    if (this.timeout > 0) {
       setTimeout(() => {
         this.visible = false;
       }, this.timeout);
-    } else {
-      this.visible = true;
     }
   }
 

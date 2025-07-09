@@ -66,7 +66,7 @@
         },
         {
             "name": "Home",
-            "id": "component-Home-4685962d3f32b50effbd1338e7113007f2a349d961673721c887a8854661e6a726f1c4ac46653a2c98da06cde0ace869b54502020c3b955193ad509f3bb97242",
+            "id": "component-Home-c63ae2c71fed97795294df09958b1f206312afa2cfc9a4e8f2a4504ffd8f6e93650b5cb301dca27f79ff8043f94b78dfc88dca320302bc6bc2b40e85f4042f83",
             "file": "src/app/home/home.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -90,21 +90,11 @@
             "hostBindings": [],
             "hostListeners": [],
             "standalone": true,
-            "imports": [
-                {
-                    "name": "PSIStatusBadge"
-                },
-                {
-                    "name": "PsiCircleBadge"
-                },
-                {
-                    "name": "PsiAlert"
-                }
-            ],
+            "imports": [],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { PSIStatusBadge } from '../shared/components/psi-status-badge/psi-status-badge';\nimport { PsiCircleBadge } from '../shared/components/psi-circle-badge/psi-circle-badge';\nimport { PsiAlert } from '../shared/components/psi-alert/psi-alert';\n\n@Component({\n  selector: 'app-home',\n  imports: [PSIStatusBadge, PsiCircleBadge, PsiAlert],\n  templateUrl: './home.html',\n  styleUrl: './home.scss',\n  standalone: true,\n})\nexport class Home {}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-home',\n  imports: [],\n  templateUrl: './home.html',\n  styleUrl: './home.scss',\n  standalone: true,\n})\nexport class Home {}\n",
             "styleUrl": "./home.scss",
             "assetsDirs": [],
             "styleUrlsData": "",

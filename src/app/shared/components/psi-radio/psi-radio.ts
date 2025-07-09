@@ -39,6 +39,18 @@ export class PsiRadio implements ControlValueAccessor {
     this.checkedChange.emit(this.checked);
   }
 
+  onKeyDown(event: KeyboardEvent) {
+    if (this.disabled) {
+      return;
+    }
+    
+    // Handle space and enter keys for accessibility
+    if (event.key === ' ' || event.key === 'Enter') {
+      event.preventDefault();
+      this.select();
+    }
+  }
+
   // ControlValueAccessor interface methods
   writeValue(value: any): void {
     this.checked = value === this.value;
